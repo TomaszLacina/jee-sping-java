@@ -9,6 +9,13 @@ import pl.coderslab.beans.HelloWorld;
 @ComponentScan //Adnotacja która będzie mi szukać beanów w projekcie - w tym pakiecie i w pakietach które są niżej w hierarchi !!!
 public class AppConfig {
 
+
+    @Bean("TomaszLacina")
+    public String filename(){
+        return "Dzien dobry, poprosze mnie wstrzyknąć";
+    }
+
+
     /** Tutaj zostao zakomentowane, dlatego żeby spróbować zrobić za pomocą
      * tylko adnotacji bez jawnego tworzenia sobie beana
      *
